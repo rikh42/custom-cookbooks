@@ -33,6 +33,6 @@ template "/etc/monit/conf.d/solr.monitrc" do
   mode '0644'
 end
 
-execute "monit reload && monit restart all -g solr" do
+execute "monit reload" do
   action :run
 end
